@@ -1,0 +1,183 @@
+﻿/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #00274d, #000000); /* Blue-black gradient */
+    color: #463b3b;
+    line-height: 1.6;
+}
+
+
+/* Main Section */
+main {
+    padding: 20px;
+    background-color: #e6e6fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+h1, h2 {
+    color: #0056a3;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Lead Paragraph */
+.lead {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Background Image for First Paragraph with Blur Effect */
+.first-paragraph-with-bg {
+    position: relative;
+    padding: 20px;
+    color: #fff; /* Text color to contrast with the background */
+    background-image: url('path/to/your-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+    .first-paragraph-with-bg::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text readability */
+        filter: blur(8px); /* Adjust the blur level as needed */
+        z-index: -1;
+    }
+
+    .first-paragraph-with-bg p {
+        position: relative;
+        z-index: 1;
+    }
+
+/* Buttons */
+.btn-primary {
+    background-color: #0056a3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-primary:hover {
+        background-color: #003f74;
+    }
+
+.btn-default {
+    background-color: #e7e7e7;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-default:hover {
+        background-color: #d5d5d5;
+    }
+
+/* Image Styles */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* First Paragraph and Image Layout */
+.first-paragraph-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .first-paragraph-container img {
+        max-width: 40%; /* Adjust as needed */
+        margin-right: 20px;
+        border-radius: 5px;
+    }
+
+    .first-paragraph-container p {
+        font-size: 1.2rem;
+        color: #666;
+        max-width: 60%; /* Adjust to fit alongside the image */
+    }
+
+/* Section Styling */
+section {
+    margin-bottom: 30px;
+    perspective: 1000px; /* Adds perspective for 3D effect */
+}
+.col-md-6{
+    margin-top:70px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; /* Adjusted margin for spacing */
+}
+
+.col-md-4 {
+    padding: 10px;
+    flex: 0 0 30%; /* Adjusted to be smaller */
+    max-width: 30%;
+    background: #f5f5f5; /* Neutral accent background color for the smaller divs */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 3D effect */
+    margin: 10px; /* Space between divs */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d; /* Necessary for 3D transforms */
+}
+
+/* Add gap between rows */
+.row:not(:last-child) {
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.col-md-4:hover {
+    transform: rotateX(10deg) rotateY(10deg); /* 3D rotation on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 10px 0; /* Adjust spacing for small screens */
+    }
+}
+
+/* Link Styles */
+a {
+    color: #0056a3;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #003f74;
+    }

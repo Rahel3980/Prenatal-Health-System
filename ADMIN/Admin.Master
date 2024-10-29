@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head runat="server">
+    <meta charset="UTF-8">
+    <link href="User%20management.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><asp:ContentPlaceHolder ID="head" runat="server">Admin Dashboard</asp:ContentPlaceHolder></title>
+    <link href="ADMINMASTER.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+            </Scripts>
+        </asp:ScriptManager>
+        
+        <!-- Navbar Header -->
+        <nav class="navbar navbar-expand-lg navbar-dark primary-navbar">
+            <div class="container">
+                <a class="navbar-brand" runat="server" href="~/">
+                    <img src="<%= ResolveUrl("~/image/LOGO PRE.jpg") %>" alt="Logo" style="height:50px; width:auto;" />
+                    <h1>የጎንደር ዩኒቨርሲቲ አጠቃላይ ልዩ ሆስፒታል የቅድመ ወሊድ እንክብካቤ አገልግሎት</h1>
+                </a>
+              
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="adminhome.aspx">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="doc regestration.aspx">Register Doc/Staff</a></li>
+                        <li class="nav-item"><a class="nav-link" href="User management.aspx">User management</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Report.aspx">Report</a></li>
+
+
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/docstaff/logout.aspx">LOGOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <p>&copy; 2024 University of Gondar Health System. All rights reserved.</p>
+                    <ul class="footer-links">
+                        <li><a href="About.aspx">About Us</a></li>
+                        <li><a href="Contact.aspx">Contact Us</a></li>
+                        <li><a href="privacy.aspx">Privacy Policy</a></li>
+
+                        <li><a href="privacy%20.aspx">Privacy Policy</a></li>
+                        <li><a href="Terms.aspx">Terms of Service</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </form>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+    </asp:PlaceHolder>
+</body>
+</html>

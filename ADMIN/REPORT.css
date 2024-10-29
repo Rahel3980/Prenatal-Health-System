@@ -1,0 +1,107 @@
+﻿/* Global Styles */
+body {
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* STATUS container */
+.STATUS-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Metrics Section */
+.metrics-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Metric Box (3D effect) */
+.metric-box {
+    background-color: #ffffff;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+    .metric-box img {
+        max-width: 100px;
+        margin-bottom: 15px;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .metric-box h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    /* Label Styling */
+    .metric-box asp\:label {
+        font-size: 22px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    /* 3D Hover Effect */
+    .metric-box:hover {
+        transform: translateY(-10px) rotateX(10deg) rotateY(5deg);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    }
+
+        .metric-box:hover img {
+            transform: rotate(360deg);
+        }
+
+    .metric-box:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0) 40%, rgba(255,255,255,0.4));
+        transition: all 0.6s ease;
+        transform: scale(0);
+    }
+
+    .metric-box:hover:before {
+        transform: scale(1.5);
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .metrics-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .metric-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

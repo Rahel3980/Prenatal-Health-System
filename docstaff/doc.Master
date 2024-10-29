@@ -1,0 +1,44 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="doc.master.vb" Inherits="UOG_Comprensive_Specialized_hospital_prenatal_care_service.doc" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Prenatal Care Service</title>
+
+    <link href="<%= ResolveUrl("~/Scripts/bootstrap.css") %>" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <link href="dmaster.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server"></asp:ScriptManager>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary fixed-top">
+            <div class="container">
+                <a class="navbar-brand" runat="server" href="~/">
+                    <img src="LOGO%20PRE.jpg" alt="Logo" style="height:40px; width:auto;"/>                      
+                    UNIVERSITY OF GONDAR COMPREHENSIVE SPECIALIZED HOSPITAL PRENATAL CARE SERVICE/            
+                    
+                    <h1>  የጎንደር ዩኒቨርሲቲ አጠቃላይ ልዩ ሆስፒታል የቅድመ ወሊድ እንክብካቤ አገልግሎት</h1>
+
+                </a>
+               
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/docstaff/docprofile.aspx">PROFILE/መገለጫ</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/docstaff/Updateprofiledoc.aspx">UPDATE PROFILE/መገለጫ አዘምን</a></li>
+
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/docstaff/mainappointment.aspx">Schedule Appointment/ቀጠሮ</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/docstaff/medicalhistory.aspx">Medical History/የሕክምና ታሪክ</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/docstaff/logout.aspx">LOGOUT/ውጣ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    </form>
+    <script src="<%= ResolveUrl("~/Scripts/bootstrap.js") %>"></script>
+</body>
+</html>

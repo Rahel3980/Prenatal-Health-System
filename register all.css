@@ -1,0 +1,132 @@
+﻿/* Gradient Background */
+body {
+    background: linear-gradient(135deg, #C1C6FF, #B2B2B2); /* Gradient background */
+    color: #333; /* Text color */
+    font-family: 'Arial', sans-serif; /* Font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Center the content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5; /* Light background color for the content area */
+    padding: 20px; /* Padding around the main content */
+}
+
+/* 3D effect for the smaller sections */
+section {
+    background-color: white; /* White background for sections */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside sections */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 6px 20px rgba(0, 0, 0, 0.15); /* 3D shadow effect */
+    transform: perspective(1000px) translateZ(15px); /* 3D effect */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    width: 80%; /* Reduce the width */
+    max-width: 400px; /* Limit the maximum size */
+    margin: 10px auto; /* Center sections horizontally and add spacing */
+
+}
+
+    section:hover {
+        transform: perspective(1000px) translateZ(30px); /* Enhanced 3D effect on hover */
+    }
+
+/* Additional styling for headings and paragraphs */
+h1, h2 {
+    color: #333; /* Text color */
+    text-align: center; /* Center text */
+}
+
+p {
+    text-align: center; /* Center paragraphs */
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 8px 16px; /* Padding inside buttons */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* 3D shadow effect */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+    .btn:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+/* Responsive adjustments for images */
+.img-fluid {
+    max-width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* 3D shadow effect */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    section {
+        width: 90%; /* Slightly wider on smaller screens */
+        max-width: none; /* Remove max-width constraint */
+    }
+}
+
+/* Adjustments for table and form elements */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse;
+    font-size: 12px; /* Reduced font size */
+}
+
+td {
+    padding: 6px; /* Reduced padding */
+    vertical-align: top; /* Align text to the top */
+}
+
+input[type="text"], input[type="password"], select, button {
+    width: 100%; /* Full width of container */
+    max-width: 200px; /* Adjusted max width */
+    padding: 6px; /* Reduced padding */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Light border */
+    border-radius: 4px; /* Slightly smaller border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-size: 12px; /* Reduced font size */
+    margin: 4px 0; /* Reduced margin */
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+}
+
+button {
+    width: auto; /* Auto width for buttons */
+    max-width: 120px; /* Reduced max width */
+    padding: 6px; /* Reduced padding */
+    border: none;
+    background: #4CAF50; /* Green background */
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px; /* Adjusted font size */
+}
+
+    button:hover {
+        background: #45a049; /* Darker green on hover */
+    }
+
+@media (max-width: 768px) {
+    td {
+        display: block; /* Stack elements vertically on small screens */
+        width: 100%;
+    }
+
+        td:first-child {
+            margin-bottom: 6px; /* Margin below label */
+        }
+
+        td:last-child {
+            width: 100%;
+        }
+}

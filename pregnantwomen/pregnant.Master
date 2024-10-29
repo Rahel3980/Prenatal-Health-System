@@ -1,0 +1,42 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="pregnant.master.vb" Inherits="UOG_Comprensive_Specialized_hospital_prenatal_care_service.pregnant" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Prenatal Care Service</title>
+    <link href="premaster.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server"></asp:ScriptManager>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" runat="server" href="~/">
+                    <img src="LOGO%20PRE.jpg" alt="Logo" style="height: 40px; width: auto;" />
+
+                     <h1>  የጎንደር ዩኒቨርሲቲ አጠቃላይ ልዩ ሆስፒታል የቅድመ ወሊድ እንክብካቤ አገልግሎት</h1>
+                </a>
+              
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/pregnantwomen/Profile.aspx">PROFILE/መገለጫ
+
+                                             </a></li>
+                      <li class="nav-item"><a class="nav-link" runat="server" href="~/pregnantwomen/UpdateProfile.aspx"> UPDATE PROFILE/መገለጫ አዘምን</a></li>
+
+                       <li class="nav-item"><a class="nav-link" runat="server" href="~/pregnantwomen/dailycheckin.aspx">DAILYCHECKIN/ዕለታዊ ቼክኪን</a></li>
+                         <li class="nav-item"><a class="nav-link" runat="server" href="~/pregnantwomen/appointment.aspx">APPOINTMENT/ቀጠሮ</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/docstaff/logout.aspx">LOGOUT/ውጣ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script src="<%= ResolveUrl("~/Scripts/bootstrap.js") %>"></script>
+</body>
+</html>

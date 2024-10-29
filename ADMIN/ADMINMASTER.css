@@ -1,0 +1,146 @@
+﻿/* global-styles.css */
+
+/* Navigation Bar Styles */
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #008000; /* Green background color */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between brand and nav items */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding around the navbar */
+    position: relative; /* Positioning context for navbar items */
+    z-index: 1000; /* Ensure it sits above other elements */
+}
+
+
+/* Navbar Brand Container Styles */
+.navbar-brand-container {
+    display: flex; /* Flex container for centering brand */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    flex: 1; /* Allow this container to grow and center */
+}
+
+/* Navbar Brand Styles */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+}
+
+    .navbar-brand img {
+        width: 120px; /* Adjust size as needed */
+        height: 120px; /* Ensures the logo remains square */
+        border-radius: 50%; /* Makes the logo circular */
+        background-image: url('path/to/your-logo.png'); /* Replace with your logo path */
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds 3D shadow */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        transform-style: preserve-3d; /* Necessary for 3D transforms */
+    }
+
+    .navbar-brand h1 {
+        font-size: 18px; /* Font size for the title */
+        color: #fff; /* White text color */
+        margin: 0 0 0 10px; /* Add margin to the right of the logo */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* 3D shadow effect */
+    }
+
+/* Navbar Links Styles */
+.navbar-nav {
+    display: flex; /* Flex container for the links */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+    .navbar-nav .nav-item {
+        margin-left: 20px; /* Space between links */
+    }
+
+    .navbar-nav .nav-link {
+        color: #fff; /* White text color */
+        text-decoration: none; /* Remove underline */
+        font-size: 16px; /* Font size */
+        padding: 10px 15px; /* Padding around the text */
+        border-radius: 4px; /* Rounded corners */
+        position: relative; /* For 3D effect */
+        transition: all 0.3s ease; /* Smooth transition */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* 3D shadow effect */
+    }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #555; /* Background color on hover */
+            transform: translateY(-3px); /* Slight lift effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        }
+
+/* Footer Styles */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Padding around the footer */
+    text-align: center; /* Center text */
+    position: relative; /* Positioning context for footer content */
+}
+
+.footer-container {
+    max-width: 1200px; /* Maximum width of footer content */
+    margin: 0 auto; /* Center container */
+    padding: 0 20px; /* Padding inside the container */
+}
+
+.footer-content {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+    .footer-content p {
+        margin: 0; /* Remove default margin */
+        color: #fff; /* White text color */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* 3D shadow effect */
+    }
+
+.footer-links {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 10px 0; /* Margin around links */
+}
+
+    .footer-links li {
+        display: inline; /* Display links in a row */
+        margin: 0 10px; /* Space between links */
+    }
+
+    .footer-links a {
+        color: #fff; /* White text color */
+        text-decoration: none; /* Remove underline */
+        font-size: 14px; /* Font size */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* 3D shadow effect */
+        transition: color 0.3s ease; /* Smooth color transition */
+    }
+
+        .footer-links a:hover {
+            color: #d4af37; /* Golden color on hover */
+        }
+
+.social-icons {
+    margin: 10px 0; /* Margin around social icons */
+}
+
+    .social-icons a {
+        color: #fff; /* White icon color */
+        font-size: 20px; /* Icon size */
+        margin: 0 10px; /* Space between icons */
+        transition: color 0.3s ease; /* Smooth color transition */
+    }
+
+        .social-icons a:hover {
+            color: #d4af37; /* Golden color on hover */
+        }

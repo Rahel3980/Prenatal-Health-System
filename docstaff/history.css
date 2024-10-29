@@ -1,0 +1,111 @@
+﻿/* General container styling with 3D and animation */
+.container {
+    padding: 20px;
+    font-family: sans-serif;
+    max-width: 800px; /* Set a max-width to center */
+    margin: 0 auto; /* Center the container horizontally */
+    background-color: #fff;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+    position: relative;
+    animation: move 5s infinite ease-in-out; /* Animation for moving effect */
+}
+
+/* 3D Moving Animation */
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Starting shadow */
+    }
+
+    50% {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Larger shadow at mid-point */
+    }
+
+    100% {
+        transform: translateY(0px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Back to the initial shadow */
+    }
+}
+
+/* Heading Styling */
+h2 {
+    color: #007bff; /* Blue heading color */
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 2px solid #007bff; /* Blue border around the table */
+    margin-bottom: 20px;
+}
+
+    table th, table td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    table th {
+        background-color: #f0f0f5; /* Very light gray header */
+        font-weight: bold;
+        border-bottom: 2px solid #007bff; /* Blue border below header */
+    }
+
+/* Label styling */
+label {
+    display: block; /* Labels on their own line */
+    margin-bottom: 5px;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box;
+}
+
+/* Button styling */
+input[type="submit"],
+button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+    /* Hover effect for button */
+    input[type="submit"]:hover,
+    button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+/* Error/Success message styling */
+.error-message,
+.success-message {
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.error-message {
+    background-color: #fdd;
+    color: #a00;
+}
+
+.success-message {
+    background-color: #dfd;
+    color: #080;
+}

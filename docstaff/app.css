@@ -1,0 +1,63 @@
+﻿<style type="text/css" >
+/* Container for the form */
+.container12 {
+    margin-top: 150px; /* Adjust the top margin to prevent overlap with the navbar */
+    max-width: 800px; /* Set a maximum width for the container */
+    width: 100%; /* Full width within the max-width boundary */
+    padding: 20px; /* Padding for aesthetics */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+    margin-left: 50%; /* Center align the container */
+    margin-right: auto; /* Center align the container */
+    margin-bottom:30px;
+}
+
+/* Style the h2 element */
+.container12 h2 {
+    text-align: center; /* Center the heading */
+    margin-top: 20px; /* Smaller top margin for compact layout */
+    color: dodgerblue;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px; /* Space between form elements */
+    margin-top: 15px;
+    margin-left: auto; /* Center align the container */
+    margin-right: auto; /* Center align the container */
+}
+
+/* Style for form controls */
+.form-control {
+    width: 100%; /* Full width for inputs */
+    padding: 8px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Make padding and borders part of the width calculation */
+}
+
+/* Button styles */
+input[type="submit"], button {
+    background-color: #478ac9; /* Blue button color */
+    color: white; /* White text */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+    /* Hover effect for buttons */
+    input[type="submit"]:hover, button:hover {
+        background-color: #336799; /* Darker blue on hover */
+    }
+
+/* Style for the wider input */
+.auto-style2 {
+    width: 100%; /* Ensure the input takes the full available width */
+    padding: 8px; /* Padding inside input */
+    border: 1px solid #ccc; /* Border for the input */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+</style >

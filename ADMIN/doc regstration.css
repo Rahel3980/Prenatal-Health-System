@@ -1,0 +1,146 @@
+﻿/* AdminMaster.css */
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Content Area Styles */
+.content {
+    margin-left: 270px; /* Margin to make space for sidebar */
+    padding: 20px;
+    padding-bottom: 120px; /* Space for fixed footer */
+    flex-grow: 1; /* Makes the content area grow to fill available space */
+}
+
+/* Gradient Background */
+body {
+    background: linear-gradient(135deg, #C1C6FF, #B2B2B2); /* Gradient background */
+    color: #333; /* Text color */
+    font-family: 'Arial', sans-serif; /* Font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Container for Fieldsets */
+.fieldset-container {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack fieldsets vertically */
+    gap: 20px; /* Space between fieldsets */
+    justify-content: center; /* Center fieldsets horizontally */
+    margin: 20px auto; /* Center container horizontally */
+    max-width: 1200px; /* Maximum width of container */
+    padding-bottom: 80px; /* Ensure space for footer */
+}
+
+/* Fieldset Styling */
+fieldset {
+    background: linear-gradient(135deg, #ffffff, #e0e0e0); /* Gradient background */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 10px; /* Padding */
+    width: 100%; /* Full width within flex container */
+    max-width: 600px; /* Increased width of fieldsets */
+    font-size: 14px; /* Font size */
+    box-sizing: border-box; /* Include padding in width */
+    margin: 0 auto; /* Center fieldset horizontally */
+    height: auto; /* Allow fieldset to adjust height based on content */
+}
+
+/* Specific Styling for the First Fieldset */
+.fieldset-container fieldset:first-of-type {
+    max-width: 400px; /* Smaller width for the first fieldset */
+    font-size: 12px; /* Smaller font size for the first fieldset */
+}
+
+/* Legend Styling */
+legend {
+    font-size: 14px; /* Adjusted font size */
+    color: #555;
+    padding: 0 6px; /* Reduced padding */
+    background: rgba(255, 255, 255, 0.6); /* Slightly transparent background */
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Light border */
+}
+
+/* Table Styling */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse;
+    font-size: 12px; /* Reduced font size */
+}
+
+/* Table Cells */
+td {
+    padding: 6px; /* Reduced padding */
+    vertical-align: top; /* Align text to the top */
+}
+
+/* TextBox and Button Styling */
+input[type="text"], input[type="password"], select, button {
+    width: 100%; /* Full width of container */
+    max-width: 200px; /* Adjusted max width */
+    padding: 6px; /* Reduced padding */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Light border */
+    border-radius: 4px; /* Slightly smaller border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-size: 12px; /* Reduced font size */
+    margin: 4px 0; /* Reduced margin */
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+}
+
+/* Button Styling */
+button {
+    width: auto; /* Auto width for buttons */
+    max-width: 120px; /* Reduced max width */
+    padding: 6px; /* Reduced padding */
+    border: none;
+    background: #4CAF50; /* Green background */
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px; /* Adjusted font size */
+}
+
+    button:hover {
+        background: #45a049; /* Darker green on hover */
+    }
+
+/* Align elements side by side */
+tr {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px; /* Reduced margin */
+}
+
+td:first-child {
+    width: 30%; /* Label width */
+}
+
+td:last-child {
+    width: 70%; /* Input width */
+}
+
+    td:last-child input[type="text"],
+    td:last-child input[type="password"],
+    td:last-child select {
+        width: calc(100% - 12px); /* Full width minus padding */
+    }
+
+@media (max-width: 768px) {
+    /* Responsive design for smaller screens */
+    td {
+        display: block; /* Stack elements vertically on small screens */
+        width: 100%;
+    }
+
+        td:first-child {
+            margin-bottom: 6px; /* Margin below label */
+        }
+
+        td:last-child {
+            width: 100%;
+        }
+}

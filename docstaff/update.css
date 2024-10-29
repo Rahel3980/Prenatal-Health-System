@@ -1,0 +1,73 @@
+﻿/* Update Container Styling */
+.update-container {
+    width: 50%; /* Adjust width as needed */
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    /* Heading Styling */
+    .update-container h2 {
+        text-align: center;
+        color: #007bff; /* Blue heading */
+        margin-bottom: 20px;
+    }
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+    /* Label Styling */
+    .form-group label {
+        display: block; /* Labels on their own line */
+        margin-bottom: 5px;
+    }
+
+    /* Input Field Styling */
+    .form-group input[type="text"],
+    .form-group input[type="date"],
+    .form-group select { /* Apply to dropdowns as well */
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    /* Button Styling */
+    .form-group button {
+        background-color: #007bff; /* Blue button */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        /* Button Hover Effect */
+        .form-group button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+/* Success/Error Message Styling */
+.update-container .success-message,
+.update-container .error-message {
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.update-container .success-message {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.update-container .error-message {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}

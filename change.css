@@ -1,0 +1,79 @@
+﻿div {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: auto;
+    width: 400px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+    /* Change box shadow on hover */
+    div:hover {
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    }
+
+/* Style labels */
+asp\:Label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style textboxes */
+asp\:TextBox {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+    /* Focus state for textboxes */
+    asp\:TextBox:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+/* Style validators */
+asp\:RequiredFieldValidator, asp\:RegularExpressionValidator, asp\:CompareValidator {
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+/* Style buttons */
+asp\:Button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+    /* Button hover state */
+    asp\:Button:hover {
+        background-color: #0056b3;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+/* Style error messages */
+asp\:Label#LblChangePasswordMessage {
+    font-size: 0.9em;
+    margin-top: 10px;
+    display: block;
+}
+
+

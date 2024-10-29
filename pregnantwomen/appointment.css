@@ -1,0 +1,73 @@
+﻿/* General Container Styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+    padding: 20px; /* Adds padding around the container */
+}
+
+/* Styling for the Search and GridView Section */
+.search-section {
+    width: 80%; /* Reduce overall width */
+    max-width: 400px; /* Max width for the search section */
+    background: linear-gradient(135deg, #e0f2f1, #a5d6a7); /* Green gradient background */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Enhanced 3D shadow effect */
+    padding: 15px; /* Padding inside the section */
+    margin: 30px auto; /* Increase margin from the top and center horizontally */
+    box-sizing: border-box; /* Ensures padding is included in width */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+    .search-section:hover {
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Increased shadow on hover for a moving effect */
+    }
+
+/* Input and Button Styling */
+input[type="text"] {
+    width: calc(100% - 20px); /* Decrease width */
+    padding: 8px; /* Reduce padding inside input */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Light border */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Subtle 3D shadow effect */
+    font-size: 12px; /* Reduce font size */
+    background: rgba(255, 255, 255, 0.9); /* Light background color */
+    margin-bottom: 8px; /* Reduce space below input */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+input[type="button"], asp\:Button {
+    background: linear-gradient(135deg, #66bb6a, #43a047); /* Green gradient background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Reduce padding for the button */
+    font-size: 12px; /* Reduce button text size */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle 3D shadow effect */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth background and shadow transition */
+}
+
+    input[type="button"]:hover, asp\:Button:hover {
+        background: linear-gradient(135deg, #388e3c, #2c6b3f); /* Darker green on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover for a moving effect */
+    }
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .search-section {
+        width: 100%;
+        max-width: 250px; /* Smaller width for search section on small screens */
+        padding: 10px; /* Reduced padding on small screens */
+    }
+
+    input[type="text"], input[type="button"] {
+        font-size: 10px; /* Smaller font size */
+        padding: 6px; /* Reduced padding */
+    }
+
+    asp\:Button {
+        width: 100%; /* Full width button on small screens */
+    }
+}

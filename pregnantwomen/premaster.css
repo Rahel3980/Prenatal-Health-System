@@ -1,0 +1,123 @@
+﻿/* General styles */
+
+
+/* Navbar styles */
+.navbar {
+    background-color: green; /* Purple background color */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between; /* Space between brand and nav items */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+    .navbar-brand img {
+        margin-right: 10px;
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.25rem;
+        margin: 0;
+        color: white;
+        white-space: nowrap; /* Prevent wrapping */
+    }
+
+/* Navbar items */
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end; /* Align nav items to the right */
+}
+
+.navbar-nav {
+    display: flex; /* Ensure items are displayed horizontally */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+    .nav-link:hover {
+        background-color: #495057;
+        border-radius: 5px;
+    }
+
+/* Ensure nav collapse works correctly on small screens */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .navbar-brand h1 {
+        font-size: 1rem;
+    }
+}
+
+/* Content container */
+.container.body-content {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-height: 80vh;
+    max-width: 1200px; /* Constrain width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+    .footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+/* Responsive footer */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+}

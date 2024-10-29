@@ -1,0 +1,163 @@
+﻿/* global-styles.css */
+
+/* Navigation Bar Styles */
+.navbar {
+    background: green; /* Set background color to green */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between brand and nav items */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding around the navbar */
+    position: fixed; /* Fix the navbar to the top */
+    top: 0; /* Stick the navbar to the top of the viewport */
+    width: 100%; /* Full width to span across the screen */
+    z-index: 1000; /* Ensure it sits above other elements */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
+}
+
+/* Navbar Brand Container Styles */
+.navbar-brand-container {
+    display: flex; /* Flex container for centering brand */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    flex: 1; /* Allow this container to grow and center */
+}
+
+/* Navbar Brand Styles */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+}
+
+    .navbar-brand img {
+        width: 120px; /* Adjust size as needed */
+        height: 120px; /* Ensures the logo remains square */
+        border-radius: 50%; /* Makes the logo circular */
+        background-image: url('path/to/your-logo.png'); /* Replace with your logo path */
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds 3D shadow */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        transform-style: preserve-3d; /* Necessary for 3D transforms */
+    }
+
+    .navbar-brand h1 {
+        font-size: 18px; /* Font size for the title */
+        color: #fff; /* White text color */
+        margin: 0 0 0 10px; /* Add margin to the right of the logo */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* 3D shadow effect */
+    }
+
+/* Navbar Links Styles */
+.navbar-nav {
+    display: flex; /* Flex container for the links */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+    .navbar-nav .nav-item {
+        margin-left: 20px; /* Space between links */
+    }
+
+    .navbar-nav .nav-link {
+        color: #fff; /* White text color */
+        text-decoration: none; /* Remove underline */
+        font-size: 16px; /* Font size */
+        padding: 10px 15px; /* Padding around the text */
+        border-radius: 4px; /* Rounded corners */
+        position: relative; /* For 3D effect */
+        transition: all 0.3s ease; /* Smooth transition */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* 3D shadow effect */
+    }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #555; /* Background color on hover */
+            transform: translateY(-3px); /* Slight lift effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        }
+
+/* Footer Styles */
+.footer {
+    background-color: dimgray; /* Set background color to green */
+    color: #fff; /* White text for readability */
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Allow positioning of footer items */
+}
+
+/* Adjust position of footer navbar items */
+.footer-container {
+    max-width: 1200px; /* Max width for better alignment */
+    margin: 0 auto; /* Center the container */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .footer-content p {
+        margin: 0;
+        font-size: 14px;
+        color: #bbb; /* Light gray for less emphasis */
+    }
+
+/* Footer Links Styling */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    position: relative;
+    bottom: 20px; /* Move items 20px above the bottom */
+}
+
+    .footer-links li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    .footer-links a {
+        color: #fff; /* White color for links */
+        text-decoration: none; /* Remove underline */
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+        .footer-links a:hover {
+            color: #00aaff; /* Light blue on hover */
+        }
+
+/* Social Media Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 20px; /* Adjust size as needed */
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+    .social-icon:hover {
+        transform: scale(1.1); /* Slightly increase size on hover */
+    }
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-links li {
+        display: block;
+        margin: 5px 0;
+    }
+}

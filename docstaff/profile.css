@@ -1,0 +1,47 @@
+﻿/* General styles for the profile page */
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue; /* Dark gray text */
+}
+
+/* Container for the profile view */
+.view-container {
+    width:800px;
+    align-content:center;
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+/* ... (your previous CSS styles) ... */
+
+/* Apply background color to the content area only */
+#ContentPlaceHolder1 {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the div horizontally */
+    max-width: 800px; /* Set a maximum width for the content area */
+}
+    /* Profile information display */
+    .view-container h2 {
+        color: #007bff; /* Blue heading */
+        margin-top: 70px;
+    }
+
+    .view-container label {
+        display: block; /* Each label on a new line */
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
+
+    /* Success message styling */
+    .view-container .success-message {
+        color: green;
+    }
+
+    /* Error message styling */
+    .view-container .error-message {
+        color: red;
+    }

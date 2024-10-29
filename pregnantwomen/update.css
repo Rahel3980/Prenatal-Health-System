@@ -1,0 +1,50 @@
+﻿.update-container {
+    width: 50%; /* Adjust width as needed */
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+    .update-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .form-group button {
+        background-color: #478ac9; /* Example button color */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .form-group button:hover {
+            background-color: #336799; /* Darker shade on hover */
+        }
+
+/* Optional: Add responsive styles for smaller screens */
+@media (max-width: 600px) {
+    .update-container {
+        width: 90%;
+    }
+}

@@ -1,0 +1,66 @@
+﻿/* GridView Styling */
+#gvUsers, #GridView1 {
+    border-collapse: collapse; /* Collapses borders to avoid double borders */
+    width: 100%; /* Full width */
+    margin-bottom: 30px; /* Space below the grid */
+    border: 1px solid #ddd; /* Light gray border around the grid */
+}
+
+    /* Header Styling */
+    #gvUsers th, #GridView1 th {
+        background-color: #4a148c; /* Dark purple background for headers */
+        color: #fff; /* White text color */
+        padding: 10px; /* Padding inside header cells */
+        text-align: left; /* Align text to the left */
+        border-bottom: 2px solid #ddd; /* Bottom border for header cells */
+    }
+
+    /* Data Cell Styling */
+    #gvUsers td, #GridView1 td {
+        background-color: #f9f9f9; /* Light gray background for data cells */
+        padding: 10px; /* Padding inside data cells */
+        border-bottom: 1px solid #ddd; /* Bottom border for data cells */
+    }
+
+    /* Row Hover Effect */
+    #gvUsers tr:hover, #GridView1 tr:hover {
+        background-color: #f1f1f1; /* Slightly darker background on hover */
+    }
+
+    /* Alternating Row Colors */
+    #gvUsers tr:nth-child(even), #GridView1 tr:nth-child(even) {
+        background-color: #f2f2f2; /* Light gray background for even rows */
+    }
+
+    /* Status Label Styling */
+    #gvUsers .statusLabel, #GridView1 .statusLabel {
+        font-weight: bold; /* Bold text */
+    }
+
+        #gvUsers .statusLabel[style*="color: green;"], #GridView1 .statusLabel[style*="color: green;"] {
+            color: green; /* Green text for active status */
+        }
+
+        #gvUsers .statusLabel[style*="color: red;"], #GridView1 .statusLabel[style*="color: red;"] {
+            color: red; /* Red text for inactive status */
+        }
+
+/* Button Styling */
+#Buttonact, #Buttonaction {
+    background-color: #00CC66; /* Green background */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 15px 25px; /* Padding inside button */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline-block display */
+    font-size: 16px; /* Font size */
+    margin-top: 10px; /* Space above the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+    #Buttonact:hover, #Buttonaction:hover {
+        background-color: #009966; /* Darker green on hover */
+    }
